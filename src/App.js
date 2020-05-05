@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+// import MyComponent from './03/MyComponent';
+// import PropComponent from './03/PropsComponent';
+// import ChildComponent from './03/ChildComponent';
+// import ChildComponent2 from './03/ChildComponent2';
+import DefaultPropsComponent from './03/DefaultPropsComponent';
+import ChildProperty from './03/ChildProperty';
+import StateExample from './03/StateExample';
+import ForceUpdateExample from './03/ForceUpdateExample';
+import Counter from './03/Counter';
+import LifeCycleExample from './LifeCycleExample';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+	render() {
+		return (
+			<div>
+				<LifeCycleExample />
+			</div>
+		);
+	}
 }
 
 export default App;
